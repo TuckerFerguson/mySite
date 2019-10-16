@@ -1,0 +1,189 @@
+body, html {
+  height: 100%;
+}
+
+html {
+  background-color: #A8D5BAFF;
+}
+
+body {
+  margin: 0;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(85% 0, 100% 50%, 84% 100%, 0% 100%, 12% 50%, 0% 0%);
+          clip-path: polygon(85% 0, 100% 50%, 84% 100%, 0% 100%, 12% 50%, 0% 0%);
+  background-color: #8bbee8ff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.centered{
+  position:absolute;
+  width:65%;
+  height:70%;
+  left:25%;
+  top:20%;
+  margin-left:-50px;
+  margin-top:-50px;
+  border-style: solid;
+}
+.profpic{
+  position: absolute;
+  height:  45%;
+  width: 35%;
+  border-style: solid;
+  bottom : 10%;
+  left: 10%;
+}
+.profpic img{
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+.bio{
+position:  absolute;
+right:  7%;
+width: 35%;
+height: 70%;
+bottom:  10%;
+border-style: solid;
+
+}
+.bio h1{
+text-align: center;
+font-size: 15px;
+}
+.bio ul{
+list-style-type: circle;
+padding-left:30%;
+font-size: 66%;
+}
+
+.biobanner h1{
+position: absolute;
+top: 15%;
+left: 4%;
+font-size:180%;
+
+}
+.biobanner h2{
+position: absolute;
+top: 23%;
+left: 15%;
+font-size: 180%;
+
+}
+.scroller{
+position:  absolute;
+width: 85%;
+left: 5%;
+height: 10%;
+top: 2%;
+border-style: solid;
+}
+
+body header a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  margin-left: 1%;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  font-size: 28px;
+}
+
+main section#card {
+  background: white;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 10px;
+}
+
+main section#card ul li span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fbfdfe;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+main section#card ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+main section#primary {
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+main section#primary h1 {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+main section#primary p {
+  font-size: 10px;
+}
+
+footer{
+  height: 10%;
+  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display:  flex;
+  background-color:#6A0000;
+}
+footer img{
+  height: 35%;
+
+}
+footer div{
+flex: 1;
+color: white;
+text-align: center;
+}
+#outro p{
+margin-top: 5%;
+}
+#social p{
+display: inline-block;
+margin-top:5%;
+margin-left: auto;
+margin-right:auto
+}
+#social img {
+display: inline-block;
+margin-left: auto;
+margin-right:auto
+}
+#message p{
+margin-top: 5%;
+}
+#message span{
+ height: 60px;
+ width: 60px;
+ background-image: url("C:\wamp64\www\mySite\message.png");
+ background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */
