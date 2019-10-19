@@ -15,7 +15,7 @@
     </header>
         <div class="centered">
             <div class="profpic">
-           <img src="profilePic.png">
+           <img src="profilePic2.png">
             </div>
             <div class="biobanner">
                 <h1>Tucker J.</h1>

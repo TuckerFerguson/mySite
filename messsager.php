@@ -35,7 +35,7 @@
         </div>
         <div id="message">
             <br>
-         <a href="url">Message Me</a>
+         <a href="index.php">Message Me</a>
         </div>
     </footer>
 </body>

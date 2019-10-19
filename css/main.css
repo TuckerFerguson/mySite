@@ -46,11 +46,11 @@ body #bg {
 }
 .profpic{
   position: absolute;
-  height:  45%;
-  width: 25%;
+  height:  55%;
+  width: 20%;
   border-style: solid;
   bottom : 10%;
-  left: 10%;
+  left: 17%;
 }
 .profpic img{
   position: absolute;
