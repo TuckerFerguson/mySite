@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div id="bg"></div>
+    <div id="bg">
+    <img src="background.jpg">
+    </div>
     <header>
-        <a href="#">Portfolio Documents</a>
     </header>
         <div class="centered">
             <div class="profpic">
-                <img src="profilePic.png">
+           <img src="profilePic.png">
             </div>
             <div class="biobanner">
-              <h1>Tucker J.</h1>
-              <h2>Ferguson</h2>
+                <h1>Tucker J.</h1>
+                <h2>Ferguson</h2>
             </div>
             <div class="bio">
-               <h1>About Me</h1>
-                 <ul>
-                  <li>Dev</li>
-                  <li>Resume</li>
-                  <li>Bio</li>
-                  <li>Evener</li>
-                  <li>Hobbys</li>
+                <h1>About Me</h1>
+                <ul>
+                    <li><h3>Boise State University</h3>Graduate: May, 2019</li>
+                    <li><h3>Major: Computer Science</h3>Go Broncos.</li>
+                    <li><h3>Thank you</h3> for visiting my portfolio website. Feel free to explore and learn a 
+                        little about me. If you have any questions feel free to reach out to me <a href="messsager.php">here</a>
+                    </li>
                 </ul> 
             </div>
-            <div class="scroller">
-            </div>
-           </div> 
+
+        </div> 
     <footer>
         <div id="outro"><p>Thanks for Visitng</p></div>
         <div id="social"><p>Follow:</p>
@@ -40,12 +40,11 @@
            <a href="https://github.com/TuckerFerguson"><img src="Github.png"></a>
            <a href="https://www.linkedin.com/in/tucker-ferguson-04521511a/"><img src="Linkedin.png"></a>
         </div>
-        <div id="message"><p>Message Me</p>
-          <button id="message" onclick="message()">
-              <span></span>
-          </button>
+        <div id="message">
+            <br>
+         <a href="messsager.php">Message Me</a>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-body, html {
+body{
   height: 100%;
 }
 
@@ -11,28 +11,43 @@ body {
 }
 
 body #bg {
+  z-index: -2;
   -webkit-clip-path: polygon(85% 0, 100% 50%, 84% 100%, 0% 100%, 12% 50%, 0% 0%);
           clip-path: polygon(85% 0, 100% 50%, 84% 100%, 0% 100%, 12% 50%, 0% 0%);
-  background-color: #8bbee8ff;
+  background-image: url("background.jpg");
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -1;
 }
 .centered{
+  background-color: #8bbee8ff;
+  z-index: -1;
   position:absolute;
   width:65%;
   height:70%;
-  left:25%;
+  left:20%;
   top:20%;
   margin-left:-50px;
   margin-top:-50px;
   border-style: solid;
 }
+#forminput{
+  position: absolute;
+  left: 18%;
+  top: 30px;
+}
+#forminput textarea{
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
 .profpic{
   position: absolute;
   height:  45%;
-  width: 35%;
+  width: 25%;
   border-style: solid;
   bottom : 10%;
   left: 10%;
@@ -47,9 +62,15 @@ position:  absolute;
 right:  7%;
 width: 35%;
 height: 70%;
+font-size: 24px;
 bottom:  10%;
 border-style: solid;
-
+background: #3399ff;
+overflow-y: auto; /* Use horizontal scroller if needed */
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+white-space : normal;
 }
 .bio h1{
 text-align: center;
@@ -57,23 +78,30 @@ font-size: 15px;
 }
 .bio ul{
 list-style-type: circle;
-padding-left:30%;
+padding-left:8%;
 font-size: 66%;
-}
 
+}
+.bio ul li{
+background: #cce5ff;
+margin: 12px;
+}
 .biobanner h1{
 position: absolute;
-top: 15%;
+top: 3%;
 left: 4%;
 font-size:180%;
 
 }
 .biobanner h2{
 position: absolute;
-top: 23%;
+top: 18%;
 left: 15%;
 font-size: 180%;
 
+}
+.bio h3{
+  font-size: 100%
 }
 .scroller{
 position:  absolute;
@@ -160,7 +188,6 @@ footer img{
 }
 footer div{
 flex: 1;
-color: white;
 text-align: center;
 }
 #outro p{
@@ -180,10 +207,23 @@ margin-right:auto
 #message p{
 margin-top: 5%;
 }
-#message span{
- height: 60px;
- width: 60px;
- background-image: url("C:\wamp64\www\mySite\message.png");
- background-repeat: no-repeat;
+#message a {
+  font-size:15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  padding: 2px;
+  width:80px;
+  background-color:maroon
+}
+#message a:link{
+  color: blueviolet;
+}
+#centerforminput{
+  position: absolute;
+  left: 5px;
+  top: 30px
+
 }
 /*# sourceMappingURL=main.css.map */
