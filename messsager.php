@@ -1,3 +1,20 @@
+<?php
+if(isset($_POST["submit"]))
+{   
+    $recipient="tuckerferguson208@gmail.com";
+    $subject = "message from mysite";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, 
+    "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank You! Your message has been sent.</p>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,17 +29,13 @@
     <img src="background.jpg">
     </div>
     <div class="centered">
-       <div id="forminput"> 
-    ​   <form id="messager">
-            Name: <input type="text" name="name" value="Ex. Jon Doe"><br>
-            Email: <input type="text" name="email" value="Example@gmail.com"><br>
-            <textarea name="message" form="messager" onclick="this.select()" cols="64" rows="15">Type Message...</textarea><br>
-            <input type="submit" onclick="gohome()" value="Submit"><br>
-            <script>
-                function gohome(){
-                    location.replace("index.php")
-                }
-            </script>    
+       <div id="forminput">
+       <?php $thankYou ?>
+    ​   <form id="messager" method="post" action="messsager.php">
+            Name: <input type="text" name="sender" value="Ex. Jon Doe" onclick="this.select()"><br>
+            Email: <input type="text" name="senderEmail" value="Example@gmail.com" onclick="this.select()"><br>
+            <textarea name="message" onclick="this.select()" cols="64" rows="15">Type Message...</textarea><br>
+            <input type="submit" name="submit"><br>
         </form>
         </div>
     </div>
