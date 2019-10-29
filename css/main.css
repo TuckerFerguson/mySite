@@ -122,22 +122,26 @@ body #bg {
   position: absolute;
   height:  65%;
   width: 22%;
-  bottom : 10%;
-  left: 10%;
+  bottom : 8%;
+  left: 8%;
+  border: 4px double rgba(28,110,164,0.72);
+  border-radius: 40px 40px 40px 40px;
 }
 .profpic img{
   position: absolute;
   width: 100%;
+  border-radius: 40px 40px 40px 40px;
   height: 100%
 }
 .bio{
 position:  absolute;
 right:  7%;
-width: 35%;
+width: 55%;
 height: 70%;
 font-size: 24px;
 bottom:  10%;
-border-style: solid;
+border: 4px double rgba(28,110,164,0.72);
+border-radius: 40px 40px 40px 40px;
 background: #3399ff;
 overflow-y: auto; /* Use horizontal scroller if needed */
 white-space: pre-wrap; /* css-3 */
@@ -153,6 +157,11 @@ font-size: 15px;
 list-style-type: circle;
 padding-left:8%;
 font-size: 66%;
+
+}
+.bio li::before{
+  color:red;
+}
 
 }
 .bio ul li{
@@ -254,6 +263,9 @@ footer{
   bottom: 0;
   display:  flex;
   background-color:rgb(192, 2, 2);
+}
+footer p{
+  color:white;
 }
 footer img{
   height: 35%;

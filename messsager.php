@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST["submit"]))
 {   
+    echo "hi";
     $recipient="tuckerferguson208@gmail.com";
     $subject = "message from mysite";
     $sender=$_POST["sender"];
