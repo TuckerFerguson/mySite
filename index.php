@@ -13,6 +13,39 @@
     </div>
     <header>
     </header>
+    <div id="gallery">
+    <div id="pic1">
+    <a href="https://github.com/BoiseState/CS471-F18-Ytho">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="python.png"></a>
+    </div>
+    <div id="pic2">
+    <a href="https://github.com/ryestud/CS361P3">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="java.jpg"></a>
+    </div>
+    <div id="pic3">
+    <a href="https://github.com/petersorBSCS/TrailheadCheckin_Dev">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="javascript.png"></a>
+    </div>
+    <div id="pic4">
+    <a href="https://github.com/TuckerFerguson/websiteGit">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="php.png"></a>
+    </div>
+    <div id="pic5">
+    <a href="https://github.com/TuckerFerguson/C_Programming/tree/master/backpack/CS453-2-f18/p3-shell-part2">    
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="c.jpg"></a>
+    </div>
+    <script>
+    function bigImg(x) {
+        x.style.height = "80px";
+        x.style.width = "120px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "100%";
+        x.style.width = "100%";
+    }
+    </script>
+  </div> 
         <div class="centered">
             <div class="profpic">
            <img src="profilePic2.png">
