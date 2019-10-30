@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div id="page-container">
     <div id="bg">
     <img src="background.jpg">
     </div>
@@ -66,18 +67,20 @@
             </div>
 
         </div> 
-    <footer>
-        <div id="outro"><p>Thanks for Visitng</p></div>
-        <div id="social"><p>Follow:</p>
-           <a href="https://www.facebook.com/tucker.ferguson.7?ref=bookmarks"><img src="Facebook.png"></a>
-           <a href="https://github.com/TuckerFerguson"><img src="Github.png"></a>
-           <a href="https://www.linkedin.com/in/tucker-ferguson-04521511a/"><img src="Linkedin.png"></a>
+        <div id="foots">
+            <footer>
+                <div id="outro"><p>Thanks for Visitng</p></div>
+                <div id="social"><p>Follow:</p>
+                   <a href="https://www.facebook.com/tucker.ferguson.7?ref=bookmarks"><img src="Facebook.png"></a>
+                   <a href="https://github.com/TuckerFerguson"><img src="Github.png"></a>
+                   <a href="https://www.linkedin.com/in/tucker-ferguson-04521511a/"><img src="Linkedin.png"></a>
+                </div>
+                <div id="message">
+                    <br>
+                 <a href="messsager.php">Message Me</a>
+                </div>
+            </footer>
         </div>
-        <div id="message">
-            <br>
-         <a href="messsager.php">Message Me</a>
         </div>
-    </footer>
-</body>
-
+    </body>
 </html>

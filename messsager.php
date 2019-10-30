@@ -26,9 +26,43 @@ if(isset($_POST["submit"]))
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div id="page-container">
     <div id="bg">
     <img src="background.jpg">
     </div>
+    <div id="gallery">
+    <div id="pic1">
+    <a href="https://github.com/BoiseState/CS471-F18-Ytho">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="python.png"></a>
+    </div>
+    <div id="pic2">
+    <a href="https://github.com/ryestud/CS361P3">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="java.jpg"></a>
+    </div>
+    <div id="pic3">
+    <a href="https://github.com/petersorBSCS/TrailheadCheckin_Dev">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="javascript.png"></a>
+    </div>
+    <div id="pic4">
+    <a href="https://github.com/TuckerFerguson/websiteGit">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="php.png"></a>
+    </div>
+    <div id="pic5">
+    <a href="https://github.com/TuckerFerguson/C_Programming/tree/master/backpack/CS453-2-f18/p3-shell-part2">    
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="c.jpg"></a>
+    </div>
+</div>
+<script>
+function bigImg(x) {
+        x.style.height = "80px";
+        x.style.width = "120px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "100%";
+        x.style.width = "100%";
+    }
+</script>
     <div class="centered">
        <div id="forminput">
        <?php $thankYou ?>
@@ -40,6 +74,7 @@ if(isset($_POST["submit"]))
         </form>
         </div>
     </div>
+    <div id="foots">
     <footer>
         <div id="outro"><p>Thanks for Visitng</p></div>
         <div id="social"><p>Follow:</p>
@@ -47,11 +82,13 @@ if(isset($_POST["submit"]))
            <a href="https://github.com/TuckerFerguson"><img src="Github.png"></a>
            <a href="https://www.linkedin.com/in/tucker-ferguson-04521511a/"><img src="Linkedin.png"></a>
         </div>
-        <div id="message">
-            <br>
-         <a href="index.php">Message Me</a>
+            <div id="message">
+                <br>
+            <a href="index.php">Home</a>
+            </div>
+        </footer>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>
