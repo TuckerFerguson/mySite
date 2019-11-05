@@ -9,9 +9,9 @@
 </head>
 <body>
 <div id="page-container">
-    <div id="bg">
-    <img src="background.jpg">
-    </div>
+<div class="backimage">
+             <img src="background.jpg">
+            </div>
     <header>
     </header>
     <div id="gallery">

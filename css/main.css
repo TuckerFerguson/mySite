@@ -19,6 +19,19 @@ body #bg {
   height: 100%;
   position: relative;
 }
+.backimage img{
+  border: 4px double rgba(28,110,164,0.72);
+ border-radius: 40px 40px 40px 40px;
+  position:absolute;
+  width:80%;
+  z-index: -2;
+  height:69%;
+  left:12%;
+  top:15%;
+  margin-left:-50px;
+  margin-top:-50px;
+  border-style: solid;
+}
 .centered{
   background-color: #8bbee8ff;
   z-index: -1;
