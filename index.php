@@ -37,8 +37,8 @@
     </div>
     <script>
     function bigImg(x) {
-        x.style.height = "80px";
-        x.style.width = "120px";
+        x.style.height = "130%";
+        x.style.width = "125%";
     }
 
     function normalImg(x) {
