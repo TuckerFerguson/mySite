@@ -10,14 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"> 
     <link rel="stylesheet" href="css/main.css">
-    <style>
-      .fancy {
-        font-family: 'Lobster';
-		color:white;
-        text-decoration:underline;
-        font-size:125%;
-      		}
-    </style>
+    
 </head>
 <body>
     <div id="page-container">
