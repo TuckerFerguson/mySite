@@ -23,46 +23,39 @@ if(isset($_POST["submit"]))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div id="page-container">
-    <div id="bg">
+    <div class="backimage">
     <img src="background.jpg">
     </div>
-    <div id="gallery">
-    <div id="pic1">
+    <div class="gallery">
+    <div>
     <a href="https://github.com/BoiseState/CS471-F18-Ytho">
     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="python.png"></a>
     </div>
-    <div id="pic2">
+    <div>
     <a href="https://github.com/ryestud/CS361P3">
     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="java.jpg"></a>
     </div>
-    <div id="pic3">
+    <div>
     <a href="https://github.com/petersorBSCS/TrailheadCheckin_Dev">
     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="javascript.png"></a>
     </div>
-    <div id="pic4">
+    <div>
     <a href="https://github.com/TuckerFerguson/websiteGit">
     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="php.png"></a>
     </div>
-    <div id="pic5">
+    <div>
     <a href="https://github.com/TuckerFerguson/C_Programming/tree/master/backpack/CS453-2-f18/p3-shell-part2">    
     <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="c.jpg"></a>
     </div>
 </div>
-<script>
-function bigImg(x) {
-        x.style.height = "80px";
-        x.style.width = "120px";
-    }
-
-    function normalImg(x) {
-        x.style.height = "100%";
-        x.style.width = "100%";
-    }
-</script>
     <div class="centered">
        <div id="forminput">
        <?php $thankYou ?>
@@ -89,6 +82,16 @@ function bigImg(x) {
         </footer>
         </div>
     </div>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.gallery').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+            });
+        });
+        </script>   
 </body>
 
 </html>

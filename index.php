@@ -17,7 +17,7 @@
         <div class="backimage">
              <img src="background.jpg">
         </div>
-
+        <!-- scrap this shit brodad--->
         <div class="gallery">
             <div>
                 <a href="https://github.com/BoiseState/CS471-F18-Ytho">
